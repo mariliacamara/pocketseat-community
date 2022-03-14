@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { HeadingProps } from './Heading'
 
 const StyledHeading = styled.div<HeadingProps>`
-  
+  margin-bottom: 5rem;
 `
 
 const StyledTitle = styled.h1<HeadingProps>`

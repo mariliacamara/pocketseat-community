@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { FooterProps } from './Footer'
 
 const StyledFooter = styled.div<FooterProps>`
-  margin-bottom: 4rem;
+  margin: 4rem 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

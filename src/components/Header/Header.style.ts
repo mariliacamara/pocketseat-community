@@ -3,10 +3,16 @@ import { HeaderProps } from './Header'
 
 const StyledHeader = styled.div<HeaderProps>`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 6.5rem;
+  margin-bottom: 4rem;
+  gap: 4rem;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
   
 `
 
