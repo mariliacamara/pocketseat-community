@@ -14,7 +14,7 @@ const StyledTitle = styled.h1<HeadingProps>`
   
 
   @media screen and (min-width:1200px) {
-    width: 30vw;
+    width: 31vw;
   }
 `
 const StyledSubtitle = styled.h2<HeadingProps>`

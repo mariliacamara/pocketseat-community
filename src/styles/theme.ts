@@ -4,7 +4,7 @@ const defaultTheme = {
     secondary: '#aeaeae',
     purple: '#873eff',
     green: '#04D361',
-    bg: '#0C0C0C'
+    bg: '#0E091B'
   },
   functions: {
     toRem: (px: number) => `${px/16}rem`
