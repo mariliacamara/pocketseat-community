@@ -10,7 +10,10 @@ const GlobalStyle = createGlobalStyle<Props>`
     font-family: ${({theme}) => theme.fonts.types.body};
     font-size: ${({theme}) => theme.functions.toRem(16)};
     background: ${({theme}) => theme.colors.bg};
-    color: ${({theme}) => theme.colors.fg};
+    color: ${({theme}) => theme.colors.secondary};
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
 `
 

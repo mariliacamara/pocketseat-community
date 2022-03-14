@@ -1,17 +1,18 @@
 const defaultTheme = {
   colors: {
-    bg: '#fff',
-    fg: '#49adaa',
-    primary: '#49adaa',
-    secondary: '#a48bc5',
+    primary: '#f9f9f9',
+    secondary: '#aeaeae',
+    purple: '#873eff',
+    green: '#04D361',
+    bg: '#0C0C0C'
   },
   functions: {
     toRem: (px: number) => `${px/16}rem`
   },
   fonts: {
     types: {
-      title: 'Orbitron',
-      body: 'Rubik',
+      title: 'IBM Plex Mono',
+      body: 'DM Sans',
     },  
     sizes: {
       xs: 10,
