@@ -2,7 +2,6 @@
 import { Heading, Header, Footer, Cards } from 'components'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -16,10 +15,10 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <Header>Header goes here!</Header>
-        <Heading>Heading goes here!</Heading>
-        <Cards>Heading goes here!</Cards>
-        <Footer>Footer goes here!</Footer>
+        <Header />
+        <Heading />
+        <Cards />
+        <Footer />
       </main>
 
 
