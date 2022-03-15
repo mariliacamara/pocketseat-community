@@ -1,7 +1,6 @@
 import styled from "styled-components"
-import { HeaderProps } from './Header'
 
-const StyledHeader = styled.div<HeaderProps>`
+const StyledHeader = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,54 +12,50 @@ const StyledHeader = styled.div<HeaderProps>`
     justify-content: space-between;
     gap: 0;
   }
-  
 `
 
-const StyledLogo = styled.div<HeaderProps>`
-  color: ${({ theme, color }) => theme.colors[color]};
-  font-family: ${({ theme, font }) => theme.fonts.types[font]};
-  font-weight: ${({ weight }) => weight};
-  font-size: ${({ theme, size }) => theme.functions.toRem(theme.fonts.sizes[size])};
+const StyledLogo = styled.div`
+  color: ${props => props.theme.colors.primary};
+  font-weight: 700;
+  font-size: ${props => props.theme.functions.toRem(props.theme.fonts.sizes.xxl)};
   line-height: 1.2;
   text-transform: uppercase;
   
-
   @media screen and (min-width:1200px) {
     width: 30vw;
   }
 `
-const StyledMenu = styled.div<HeaderProps>`
-  color: ${({ theme, color }) => theme.colors[color]};
-  font-family: ${({ theme, font }) => theme.fonts.types[font]};
-  font-weight: ${({ weight }) => weight};
-  font-size: ${({ theme, size }) => theme.functions.toRem(theme.fonts.sizes[size])};
+const StyledMenu = styled.div`
+  color: ${props => props.theme.colors.primary};
+  font-size: ${props => props.theme.functions.toRem(props.theme.fonts.sizes.sm)};
+  font-weight: 700;
   line-height: 1.2;
 `
 
-const StyledGithub = styled.a<HeaderProps>`
+const StyledGithub = styled.a`
+  color: ${props => props.theme.colors.primary};
   padding: 2rem 0;
   margin-right: 2rem;
   text-transform: uppercase;
-  color: ${({ theme, color }) => theme.colors[color]};
   text-decoration: none;
   transition: 0.5s;
 
   &:hover {
-    color: ${({ theme, color }) => theme.colors['purple']};
+    color: ${props => props.theme.colors.purple};
   }
 `
 
-const StyledLogin = styled.a<HeaderProps>`
-  border: 1px solid ${({ theme, color }) => theme.colors['purple']};
+const StyledLogin = styled.a`
+  border: 1px solid ${props => props.theme.colors.purple};
   border-radius: .4rem;
   padding: 1rem 2rem;
   text-transform: uppercase;
-  color: ${({ theme, color }) => theme.colors[color]};
+  color: ${props => props.theme.colors.primary};
   text-decoration: none;
   transition: 0.5s;
 
   &:hover {
-    border: 1px solid ${({ theme, color }) => theme.colors['green']};
+    border: 1px solid ${props => props.theme.colors.green};
   }
 `
 

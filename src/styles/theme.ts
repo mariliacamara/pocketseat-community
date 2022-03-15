@@ -1,4 +1,4 @@
-const defaultTheme = {
+export const defaultTheme = {
   colors: {
     primary: '#f9f9f9',
     secondary: '#aeaeae',
@@ -24,7 +24,4 @@ const defaultTheme = {
       xxxl: 40,
     }
   }
-}
-
-export type ThemeType = typeof defaultTheme
-export default defaultTheme
+} as const

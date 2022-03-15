@@ -1,20 +1,21 @@
 import styled from "styled-components"
-import { FooterProps } from './Footer'
 
-const StyledFooter = styled.div<FooterProps>`
+const StyledFooter = styled.div`
   margin: 6rem 0 2rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  
+
+  @media screen and (min-width:600px) {
+    flex-direction: row;
+  }
 `
 
-const StyledFooterLogo = styled.div<FooterProps>`
-  color: ${({ theme, color }) => theme.colors[color]};
-  font-family: ${({ theme, font }) => theme.fonts.types[font]};
-  font-weight: ${({ weight }) => weight};
-  font-size: ${({ theme, size }) => theme.functions.toRem(theme.fonts.sizes[size])};
+const StyledFooterLogo = styled.div`
+  color: ${props => props.theme.colors.purple};
+  font-size: ${props => props.theme.functions.toRem(props.theme.fonts.sizes.xxl)};
+  font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
   
@@ -23,18 +24,21 @@ const StyledFooterLogo = styled.div<FooterProps>`
     width: 30vw;
   }
 `
-const StyledFooterList = styled.ul<FooterProps>`
-  color: ${({ theme, color }) => theme.colors[color]};
-  font-family: ${({ theme, font }) => theme.fonts.types[font]};
-  font-weight: ${({ weight }) => weight};
-  font-size: ${({ theme, size }) => theme.functions.toRem(theme.fonts.sizes[size])};
+const StyledFooterList = styled.ul`
+  font-family: ${props => props.theme.fonts.types.title};
+  font-size: ${props => props.theme.functions.toRem(props.theme.fonts.sizes.sm)};
   line-height: 1.2;
+  margin: 0;
+  padding: 0;
 `
 
-const StyledItem = styled.li<FooterProps>`
+const StyledItem = styled.li`
   list-style: none;
   display: inline-block;
-  margin-left: 1rem; 
+
+  &:last-child {
+    margin-left: 1rem;
+  }
 `
 
 export { StyledFooter, StyledFooterLogo, StyledFooterList, StyledItem }
