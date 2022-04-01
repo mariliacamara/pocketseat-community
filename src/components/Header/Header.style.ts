@@ -7,6 +7,10 @@ const StyledHeader = styled.div`
   margin-bottom: 4rem;
   gap: 4rem;
 
+  @media screen and (max-width:445px) {
+    gap: 1rem;
+  }
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
@@ -30,6 +34,12 @@ const StyledMenu = styled.div`
   font-size: ${props => props.theme.functions.toRem(props.theme.fonts.sizes.sm)};
   font-weight: 700;
   line-height: 1.2;
+
+  @media screen and (max-width:445px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 `
 
 const StyledGithub = styled.a`
@@ -42,6 +52,10 @@ const StyledGithub = styled.a`
 
   &:hover {
     color: ${props => props.theme.colors.purple};
+  }
+
+  @media screen and (max-width:445px) {
+    margin-right: 0;
   }
 `
 

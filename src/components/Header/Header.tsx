@@ -4,11 +4,11 @@ import { StyledHeader, StyledLogo, StyledMenu,  StyledGithub, StyledLogin } from
 const Header = () => (
   <StyledHeader>
     <StyledLogo>
-      Pocketseat
+      Codeland
     </StyledLogo>  
     <StyledMenu>
       <StyledGithub href='https://github.com/mariliacamara'>Meu Github</StyledGithub>
-      <StyledLogin href='#'> Entrar na comunidade </StyledLogin>
+      <StyledLogin href='#'>Entrar na comunidade </StyledLogin>
     </StyledMenu>  
   </StyledHeader>
 );

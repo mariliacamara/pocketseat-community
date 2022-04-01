@@ -10,6 +10,11 @@ const StyledTitle = styled.h1`
   font-weight: 700;
   font-size: ${props => props.theme.functions.toRem(props.theme.fonts.sizes.xxxl)};
   line-height: 1.2;
+  width: 100vw;
+
+  @media screen and (max-width:445px) {
+    font-size: ${props => props.theme.functions.toRem(props.theme.fonts.sizes.xl)};
+  }
   
   @media screen and (min-width:1200px) {
     width: 31vw;
@@ -22,6 +27,10 @@ const StyledSubtitle = styled.h2`
   font-size: ${props => props.theme.functions.toRem(props.theme.fonts.sizes.lg)};
   line-height: 1.2;
   text-transform: uppercase;
+
+  @media screen and (max-width:445px) {
+    font-size: ${props => props.theme.functions.toRem(props.theme.fonts.sizes.lg)};
+  }
 `
 const StyledText = styled.p`
   color: ${props => props.theme.colors.secondary};
@@ -29,6 +38,10 @@ const StyledText = styled.p`
   line-height: 1.2;
   text-align: left;
 
+  @media screen and (max-width:445px) {
+    font-size: ${props => props.theme.functions.toRem(props.theme.fonts.sizes.lg)};
+  }
+  
   @media screen and (min-width:1200px) {
     width: 50vw;
   }

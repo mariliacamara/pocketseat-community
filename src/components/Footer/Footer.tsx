@@ -4,7 +4,7 @@ import { StyledFooter, StyledFooterLogo, StyledFooterList, StyledItem } from './
 const Footer = () => (
   <StyledFooter>
     <StyledFooterLogo>
-      &copy
+      Codeland
     </StyledFooterLogo>  
     <StyledFooterList>
       <StyledItem>2022 - Marília Camara</StyledItem>
